@@ -7,7 +7,7 @@
 html{
     background-color: rgb(152, 233, 233);
     color: rgb(51, 23, 23);
-    font-family: sans-serif;
+    font-family: Oswald,sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
@@ -17,4 +17,7 @@ html{
     max-width: 1140px;
     margin: 0;
     
+}
+header{
+    background-image: url('resources/css/img/Header-Image.jpeg') ;
 }
