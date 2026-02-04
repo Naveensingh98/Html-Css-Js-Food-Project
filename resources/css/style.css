@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: brown;
+html{
+    background-color: rgb(152, 233, 233);
+    color: rgb(51, 23, 23);
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
 }
