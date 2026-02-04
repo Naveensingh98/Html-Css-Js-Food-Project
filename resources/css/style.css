@@ -6,15 +6,11 @@
 
 html{
     background-color: rgb(152, 233, 233);
-    color: rgb(51, 23, 23);
+    color: rgb(228, 171, 171);
     font-family: Oswald,sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
-}
-h1 {
-    margin: 0;
-    padding: 0;
 }
 
 
@@ -24,11 +20,38 @@ h1 {
     
 }
 header{
-  background-image: url('img/image.png');
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('img/image.png');
   height: 100vh;
   background-size: cover;
   background-position: center;
 }
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: antiquewhite;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+
+
+
+.btn-full:hover{
+    background-color: rgb(224, 96, 10);
+    color: antiquewhite;
+}
+.btn-ghost:hover{
+    /* background-color: rgb(224, 96, 10); */
+    color: antiquewhite;
+}
+
+
+
+
 
 .hero-text-box{
     position: absolute;
@@ -36,4 +59,75 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 300;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s,color 0.2s;
+    
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: rgb(224, 96, 10);
+    color: antiquewhite;
+    border: 1px solid orangered;
+    margin-right: 25px;
+}
+.btn-ghost:visited,
+.btn-ghost:link{
+    border:1px solid orangered;
+    color: antiquewhite;
+}
+.btn:hover,
+.btn:active{
+    background-color: rgb(15, 10, 1);
+}
+.btn-ghost:hover,
+.btn-ghost:active{
+    background-color: rgb(15, 10, 1);
+}
+.btn-full:hover,
+.btn-full:active{
+    /* background-color: rgb(15, 10, 1); */
+    border: 1px solid orangered;
+
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    padding: 8px 0;
+    transition: border-bottom 0.2s;
+
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #e67e22;
 }
