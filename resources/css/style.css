@@ -5,8 +5,8 @@
 }
 
 html{
-    background-color: rgb(152, 233, 233);
-    color: rgb(228, 171, 171);
+    background-color: rgb(231, 240, 240);
+    color: rgb(17, 1, 1);
     font-family: Oswald,sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -130,4 +130,30 @@ h1 {
 .main-nav li a:hover,
 .main-nav li a:active{
     border-bottom: 2px solid #e67e22;
+}
+section{
+    padding: 80px 0;
+}
+h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box{
+    padding: 1%;
+}
+h3{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 110;
+    margin-bottom: 15px;
 }
