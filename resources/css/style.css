@@ -24,6 +24,7 @@ header{
   height: 100vh;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -305,4 +306,43 @@ a:active{
     color: #555;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s,color 0.5s;
+}
+.section-cities::after,
+.section-testimonials::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.section-testimonials{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/image.png);
+    background-color: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    margin-top: 40px;
+    position: relative;
+}
+cite{
+    font-size: 90%;
+    display: block;
+    margin-top: 25px;
+}
+cite img{
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 40px;
+    vertical-align: middle;
+}
+blockquote::before{
+    content: '\201C';
+    font-size: 5005;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 3px;
 }
