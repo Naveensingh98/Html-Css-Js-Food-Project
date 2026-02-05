@@ -16,7 +16,8 @@ html{
 
 .row {
     max-width: 1140px;
-    margin: 0 auto;   /* CENTER + extra right space fix */
+    margin: 0;
+    
 }
 header{
   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url('img/image.png');
