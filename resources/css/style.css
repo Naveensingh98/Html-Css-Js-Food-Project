@@ -47,7 +47,7 @@ h1 {
 }
 .btn-ghost:hover{
     /* background-color: rgb(224, 96, 10); */
-    color: antiquewhite;
+    color: rgb(26, 15, 1);
 }
 
 
@@ -83,15 +83,15 @@ h1 {
 .btn-ghost:visited,
 .btn-ghost:link{
     border:1px solid orangered;
-    color: antiquewhite;
+    color: rgb(15, 9, 1);
 }
 .btn:hover,
 .btn:active{
-    background-color: rgb(15, 10, 1);
+    background-color: rgb(161, 109, 11);
 }
 .btn-ghost:hover,
 .btn-ghost:active{
-    background-color: rgb(15, 10, 1);
+    background-color: rgb(173, 114, 10);
 }
 .btn-full:hover,
 .btn-full:active{
