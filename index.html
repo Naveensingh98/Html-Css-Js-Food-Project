@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Food Project</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,20 +22,20 @@
             <div class="row">
                 <img class="logo" src="resources/img/logo.png" alt="Logo-img">
                 <ul class="main-nav">
-                    <li><a href="#">Food Delivery</a></li>
-                    <li><a href="#">How It Works</a></li>
-                    <li><a href="#">Our City</a></li>
-                    <li><a href="#">Sin Up</a></li>
+                    <li><a href="#feature">Food Delivery</a></li>
+                    <li><a href="#hiw">How It Works</a></li>
+                    <li><a href="#city">Our City</a></li>
+                    <li><a href="#signup">Sin Up</a></li>
                 </ul>
             </div>
         </nav>
         <div class="hero-text-box">
             <h1>Goodbye Junk Food! <br>Hello Super Healthy Food</h1>
-            <a class="btn btn-full" href="#">I'm Hungry</a>
-            <a class="btn btn-ghost" href="#">Show Me More</a>
+            <a class="btn btn-full" href="#plans">I'm Hungry</a>
+            <a class="btn btn-ghost" href="#feature">Show Me More</a>
         </div>
     </header>
-    <section class="section-features">
+    <section class="section-features" id="feature">
         <div class="row">
             <h2>Get Food Fast &ndash; Not Fast Food</h2>
             <p class="long-copy">
@@ -83,7 +84,7 @@
         </div>
 
     </section>
-    <section class="section-meals">
+    <section class="section-meals" data-aos="fade-in" data-aos-duration="2000">
         <ul class="meals-showcase clearfix">
             <li>
                 <figure class="meal-photo">
@@ -132,13 +133,13 @@
         </ul>
 
     </section>
-    <section class="section-staps">
+    <section class="section-steps" id="hiw" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>How It Workd &dash; Simple As 1,2,3</h2>
         </div>
         <div class="row">
             <div class="col span_1_of_2 steps-box">
-                <img src="resources/img/images11.jpg" alt="Phone" class="app-screen">
+                <img data-aos="slide-left" data-aos-duration="1000" src="resources/img/images11.jpg" alt="Phone" class="app-screen">
             </div>
             <div class="col span_1_of_2 steps-box">
                 <div class="work-step">
@@ -160,7 +161,7 @@
         </div>
 
     </section>
-    <section class="section-cities">
+    <section class="section-cities" id="city" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>We Are Curently Available In These Cities</h2>
         </div>
@@ -224,7 +225,7 @@
         </div>
 
     </section>
-    <section class="section-testimonials">
+    <section class="section-testimonials" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>Our Coustmer Can't Lave Without Us</h2>
         </div>
@@ -268,13 +269,13 @@
         </div>
 
     </section>
-    <section class="section-plans">
+    <section class="section-plans" id="plans" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>Start Eating Healthy Today</h2>
         </div>
         <div class="row">
             <div class="col span_1_of_3">
-                <div class="plan-box">
+                <div data-aos="zoom-in" data-aos-duration="2000" class="plan-box">
                     <div>
                         <h3>Premium</h3>
                         <p class="plan-price">399$ <span>/ Month</span></p>
@@ -339,7 +340,7 @@
         </div>
 
     </section>
-    <section class="section_form">
+    <section class="section-form" id="signup" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>We're Happy To hear From You</h2>
         </div>
@@ -442,8 +443,42 @@
             <p>Copyright &copy; 2026 By doughdelight, All rights reserved</p>
         </div>
     </footer>
-
+    
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                    <script>
+                    AOS.init();
+                </script>
+
+            <script>
+            $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+                } // End if
+            });
+            });
+        </script>
 </body>
 </html>
