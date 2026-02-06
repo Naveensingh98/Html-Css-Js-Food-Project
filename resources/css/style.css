@@ -414,5 +414,55 @@ input[type=checkbox]{
     margin: 10px 5px 10px 0;
 }
 footer{
-    background-color: #c0b9b9;
+    background-color: #333030;
+    font-size: 80%;
+    padding: 50px ;
+    clear: both;   /* 👈 sabse important */
+}
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+.social-links{
+    list-style: none;
+    float: right;
+}
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #ccc;
+}
+.footer-nav li a:hover,
+.footer-nav li a:hover{
+    color: #f7f4f4dd;
+}
+footer p{
+    color: antiquewhite;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 20px;
+}
+.fb:hover{
+    color: #170a88;
+}
+.twi:hover{
+    color: #dfd3d3;
+}
+.goo:hover{
+    color: #bd0f0f;
+}
+.inst:hover{
+    color: #2a57d3;
+}
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 160%;
 }
